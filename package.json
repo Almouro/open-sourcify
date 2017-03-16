@@ -1,0 +1,27 @@
+{
+  "name": "open-sourcify",
+  "version": "0.1.0",
+  "description": "Kickstart your open source projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Almouro/open-sourcify.git"
+  },
+  "keywords": [
+    "semantic-release",
+    "commitizen",
+    "open source"
+  ],
+  "bin": "index.js",
+  "author": "Almouro <contact@almouro.com> (http://alexandremoureaux.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Almouro/generator-open-source/issues"
+  },
+  "homepage": "https://github.com/Almouro/generator-open-source#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cross-spawn": "^5.1.0",
+    "lodash": "^4.17.4",
+    "shelljs": "^0.7.7"
+  }
+}
