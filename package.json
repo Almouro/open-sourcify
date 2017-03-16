@@ -1,10 +1,10 @@
 {
   "name": "open-sourcify",
-  "version": "0.1.0",
+  "version": "0.0.0-managed-by-semantic-release",
   "description": "Kickstart your open source projects",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Almouro/open-sourcify.git"
+    "url": "https://github.com/Almouro/open-sourcify.git"
   },
   "keywords": [
     "semantic-release",
@@ -23,5 +23,22 @@
     "cross-spawn": "^5.1.0",
     "lodash": "^4.17.4",
     "shelljs": "^0.7.7"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "commitmsg": "validate-commit-msg",
+    "commit": "git-cz"
+  },
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "husky": "^0.13.2",
+    "semantic-release": "^6.3.2",
+    "validate-commit-msg": "^2.11.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
